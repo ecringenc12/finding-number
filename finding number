@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+	int sayi[5];
+	int i,bul;
+	int sayac=0;
+	for(i=0;i<=4;i++)
+	{
+		printf("sayi al-> ");
+		scanf("%d",&sayi[i]);
+	}
+printf("hangi sayi ariyorsunuz ? ");
+scanf("%d",&bul);
+for(i=0;i<=4;i++)
+{
+	if(sayi[i]==bul)
+	{
+		sayac=sayac+1;
+		printf("Aradiginiz sayi %d.indexte bulundu.\n",i);
+	}
+}
+printf("\nAradiginiz sayi %d kere bulundu.",sayac);
+	
+	
+	return 0;
+}
